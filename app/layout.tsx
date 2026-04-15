@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { Nunito } from "next/font/google"
 import "./globals.css"
-import Navbar from "@/components/nav/Navbar"
-import Footer from "@/components/Footer"
+import Navbar from "@/app/components/nav/nav"
+import Footer from "@/app/components/footer"
 import React from "react"
 import { Fragment } from "react"
 
