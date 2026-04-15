@@ -33,7 +33,7 @@ export default function Home() {
                 alt='Profile Picutre'
                 width={350}
                 height={350}
-                className="bg-gradient-to-br from-gray-300 to-gray-400 rounded-full p-3 w-full h-auto"
+                className="bg-linear-to-br from-gray-300 to-gray-400 rounded-full p-3 w-full h-auto"
                 />
             </div>         
 
@@ -42,7 +42,7 @@ export default function Home() {
         <div>
             <div className="text-center md:text-left mb-4">
                 <h1 className="text-5x1">
-                    Hi, I'm <span className="bg-gradient-to-tl from-indigo-500 to fuchsia-500 text-transparent bg-clip-text font-bold">Scott Fuller</span>
+                    Hi, I'm <span className="bg-linear-to-tl from-indigo-500 to fuchsia-500 text-transparent bg-clip-text font-bold">Scott Fuller</span>
                     <span className="animate-wave inline-block">✋🏻</span>
                 </h1>
                 <h2 className="text-3x1">

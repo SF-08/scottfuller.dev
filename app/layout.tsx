@@ -21,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <div className="max-w-screen-lg md:px-none px-6 min-h-screen mx-auto flex flex-col justify-center items-center">
+        <div className="max-w-5xl md:px-none px-6 min-h-screen mx-auto flex flex-col justify-center items-center">
           <Navbar />
-          <main role="main" className="flex-grow flex flex-col justify-center items-center">{children}</main>
+          <main role="main" className="grow flex flex-col justify-center items-center">{children}</main>
           <Footer />
         </div>
       </body>
