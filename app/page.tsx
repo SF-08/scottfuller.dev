@@ -51,7 +51,7 @@ export default function Home() {
             </div>
 
             {/* Bullet Points */}
-            <ul className="space-y-1 text-xl text-center md:text-left">
+            <ul className="space-y-1 text-3x1 text-center md:text-left">
                 {bulletPoints.map(({ icon, label, linkText, href, download }, index) => (
                     <li key={index}>
                         <span className="mr-2">{icon}</span>
