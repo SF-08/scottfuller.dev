@@ -41,17 +41,17 @@ export default function Home() {
         {/* Bio Section */}        
         <div>
             <div className="text-center md:text-left mb-4">
-                <h1 className="text-5x1">
+                <h1 className="text-9x1">
                     Hi, I'm <span className="bg-linear-to-tl from-indigo-500 to fuchsia-500 text-transparent bg-clip-text font-bold">Scott Fuller</span>
                     <span className="animate-wave inline-block">✋🏻</span>
                 </h1>
-                <h2 className="text-3x1">
+                <h2 className="text-7x1">
                     I'm a Web & App Developer.
                 </h2>
             </div>
 
             {/* Bullet Points */}
-            <ul className="space-y-1 text-xl text-center md:text-left">
+            <ul className="space-y-1 text-9x1 text-center md:text-left">
                 {bulletPoints.map(({ icon, label, linkText, href, download }, index) => (
                     <li key={index}>
                         <span className="mr-2">{icon}</span>
