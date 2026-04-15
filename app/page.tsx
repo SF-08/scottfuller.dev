@@ -25,7 +25,7 @@ const bulletPoints = [
 
 export default function Home() {
     return (
-        <div className="flex flex-col md:flex-row justify center items-center gap-10 md:gap-20">
+        <div className=" flex flex-col md:flex-row justify center items-center gap-10 md:gap-20">
             {/* Profile Picture */}
             <div className="relative w-87.5 md:w-2/5">
             <Image
@@ -33,7 +33,7 @@ export default function Home() {
                 alt='Profile Picutre'
                 width={350}
                 height={350}
-                className="bg-linear-to-br from-gray-300 to-gray-400 rounded-full p-3 w-full h-auto"
+                className="bg-linear-to-br from-indigo-500 to-fuchsia-500 rounded-full p-3 w-full h-auto"
                 />
             </div>         
 
