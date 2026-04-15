@@ -7,7 +7,7 @@ const Logo = ({className}: {className?: string}) => {
 const NavBar = () => {
     return (
         <nav className = "navbar">
-            <div className="w-full flex justify-center items-center">
+            <div className="w-full flex justify-center items-center h-auto">
                 <Logo />
             </div>
         </nav>

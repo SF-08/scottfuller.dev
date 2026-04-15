@@ -2,4 +2,6 @@
 
 html{
   @apply transition-colors duration-200;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
