@@ -20,6 +20,11 @@ const bulletPoints = [
         linkText: "view my resume",
         href: "/ScottFullerResume.pdf",
         download: "ScottFullerResume"
+    },
+    {
+        icon: "💼",
+        linkText: "view my projects",
+        href: "/projects"
     }
 ];
 
