@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6"
 
 const socials = [
-    { icon: FaGithub, href: "https://github.com/SF-08" },
-    { icon: FaLinkedin, href: "https://linkedin.com/in/scott-fuller-10a08431b/" },
-    { icon: FaXTwitter, href: "https://twitter.com/sc0tt08" }
+    { icon: FaGithub, href: "https://github.com/SF-08", label: "GitHub" },
+    { icon: FaLinkedin, href: "https://linkedin.com/in/scott-fuller-10a08431b/", label: "LinkedIn" },
+    { icon: FaXTwitter, href: "https://twitter.com/sc0tt08", label: "Twitter" }
 ]
 
 const bulletPoints = [
@@ -67,7 +67,7 @@ export default function Home() {
             <ul className="flex justfify-center text-3x1 gap-10 mt-4">
                 {socials.map(({ icon: Icon, href, label }) => (
                     <li key={label} className="hover:scale-125 hover:text-white transition-all ease-in-out">
-                        <Link href={href} target="_blank" aria_label={label}>
+                        <Link href={href} target="_blank" aria-label={label}>
                             <Icon />
                         </Link>
                     </li>
