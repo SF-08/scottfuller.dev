@@ -41,7 +41,7 @@ export default function Home() {
         {/* Bio Section */}        
         <div>
             <div className="text-center md:text-left mb-4">
-                <h1 className="text-9x1">
+                <h1 className="text-xl">
                     Hi, I'm <span className="bg-linear-to-tl from-indigo-500 to fuchsia-500 text-transparent bg-clip-text font-bold">Scott Fuller</span>
                     <span className="animate-wave inline-block">✋🏻</span>
                 </h1>
@@ -51,7 +51,7 @@ export default function Home() {
             </div>
 
             {/* Bullet Points */}
-            <ul className="space-y-1 text-9x1 text-center md:text-left">
+            <ul className="space-y-1 text-xl text-center md:text-left">
                 {bulletPoints.map(({ icon, label, linkText, href, download }, index) => (
                     <li key={index}>
                         <span className="mr-2">{icon}</span>
@@ -64,7 +64,7 @@ export default function Home() {
             </ul>
             
             {/* Social Links */}
-            <ul className="flex justfify-center text-3x1 gap-10 mt-4">
+            <ul className="flex justfify-center text-m gap-10 mt-4">
                 {socials.map(({ icon: Icon, href, label }) => (
                     <li key={label} className="hover:scale-125 hover:text-white transition-all ease-in-out">
                         <Link href={href} target="_blank" aria-label={label}>
