@@ -4,6 +4,7 @@ import "./globals.css"
 import Navbar from "@/components/nav/Navbar"
 import Footer from "@/components/Footer"
 import React from "react"
+import { Fragment } from "react"
 
 const nunito = Nunito({ subsets: ["latin"] })
 
@@ -22,7 +23,7 @@ export default function RootLayout({
       <body className={nunito.className}>
         <div className="max-w-screen-lg md:px-none px-6 min-h-screen mx-auto flex flex-col justify-center items-center">
           <Navbar />
-          <main className="flex-grow flex flex-col justify-center items-center">{children}</main>
+          <main role="main" className="flex-grow flex flex-col justify-center items-center">{children}</main>
           <Footer />
         </div>
       </body>
