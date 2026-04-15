@@ -1,7 +1,22 @@
 @import "tailwindcss";
 
-html{
+:root {
+  --bg-color: #000000;
+  --text-color: #f5f5f5;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
   @apply transition-colors duration-200;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
