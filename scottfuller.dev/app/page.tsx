@@ -63,13 +63,17 @@ export default function Home() {
                 ))}
             </ul>
             
-            
-            
-            
-            
-            
-            
-            
+            {/* Social Links */}
+            <ul className="flex justfify-center text-3x1 gap-10 mt-4">
+                {socials.map(({ icon: Icon, href, label }) => (
+                    <li key={label} className="hover:scale-125 hover:text-white transition-all ease-in-out">
+                        <Link href={href} target="_blank" aria_label={label}>
+                            <Icon />
+                        </Link>
+                    </li>
+                ))}
+            </ul>
             </div>        
-                </div>
-    )
+        </div>
+    );
+}
