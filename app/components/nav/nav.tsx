@@ -1,6 +1,6 @@
 const Logo = ({className}: {className?: string}) => {
     return (
-        <img alt="logo" src="/logo.png" className={'w-20 ${className}'} />
+        <img alt="logo" src="/logo.png" className= {'w-20 ${className}'} />
     )
 }
 
