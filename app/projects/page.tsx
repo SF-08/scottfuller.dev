@@ -34,7 +34,7 @@ const projects = [
         stack: ["Godot Engine", "GDScript"],
         status: "Live",
         accent: "from-yellow-500/30 via-orange-500/10 to-transparent",
-    }
+    },
     {
         name: "LateFix - WIP",
         summary:
