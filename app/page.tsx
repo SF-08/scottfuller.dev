@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6"
+import Projects from './pages/projects';
+import { AnimatePresence } from 'framer-motion';
 
 const socials = [
     { icon: FaGithub, href: "https://github.com/SF-08", label: "GitHub" },
