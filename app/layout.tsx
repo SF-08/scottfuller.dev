@@ -5,6 +5,7 @@ import Navbar from "@/app/components/nav/nav"
 import Footer from "@/app/components/footer"
 import React from "react"
 import { Fragment } from "react"
+import { Analytics } from "@vercel/analytics/react"
 
 const nunito = Nunito({ subsets: ["latin"] })
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <Navbar />
           <main role="main" className="grow flex flex-col justify-center items-center">{children}</main>
           <Footer />
+          <Analytics />
         </div>
       </body>
     </html>
