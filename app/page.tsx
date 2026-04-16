@@ -40,7 +40,7 @@ export default function Home() {
                 alt='Profile Picutre'
                 width={350}
                 height={350}
-                className="bg-linear-to-br from-lightblue-500 to-lightblue-300 rounded-full p-3 w-full h-auto"
+                className="bg-linear-to-br from-blue-500 to-indigo-300 rounded-full p-3 w-full h-auto"
                 />
             </div>         
 
