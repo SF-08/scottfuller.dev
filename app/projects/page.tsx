@@ -6,9 +6,9 @@ import MotionHoc from "../pages/motionhoc";
 
 const projects = [
     {
-        name: "Portfolio Website",
+        name: "scottfuller.dev",
         summary:
-            "A personal site built with Next.js, Tailwind, and motion to present projects, experience, and contact details.",
+            "My personal website built with Next.js, Tailwind, and Framer Motion.",
         year: "2026",
         role: "Design + Frontend",
         stack: ["Next.js", "Tailwind", "Framer Motion"],
@@ -16,23 +16,33 @@ const projects = [
         accent: "from-sky-500/30 via-cyan-500/10 to-transparent",
     },
     {
-        name: "Task Tracker UI",
+        name: "Concept Commision Work - WIP",
         summary:
-            "A clean task management interface with filtering, status indicators, and a focus on fast scanning.",
-        year: "2025",
-        role: "UI Concept",
-        stack: ["React", "TypeScript", "Tailwind"],
+            "A clean dashboard system designed to track invoices, stock & customer orders.",
+        year: "2026",
+        role: "UX/UI Design + Frontend",
+        stack: ["React", "TypeScript", "Tailwind", "NodeJS"],
         status: "Prototype",
         accent: "from-emerald-500/30 via-lime-500/10 to-transparent",
     },
     {
-        name: "Local Business Landing Page",
+        name: "Clockwork Courier",
         summary:
-            "A conversion-focused landing page layout with strong calls-to-action and responsive sections.",
+            "A game created in Godot Engine for my college assignment.",
+        year: "2026",
+        role: "Game Design + Development",
+        stack: ["Godot Engine", "GDScript"],
+        status: "Live",
+        accent: "from-yellow-500/30 via-orange-500/10 to-transparent",
+    }
+    {
+        name: "LateFix - WIP",
+        summary:
+            "A mobile app specialised to improve a person's sleep schedule and not be late for day-to-day events.",
         year: "2025",
-        role: "Landing Page",
-        stack: ["Next.js", "SEO", "Responsive Design"],
-        status: "Case Study",
+        role: "UX/UI Design + Frontend",
+        stack: ["React", "Figma", "Responsive Design"],
+        status: "Prototype",
         accent: "from-fuchsia-500/30 via-pink-500/10 to-transparent",
     },
 ];
@@ -45,7 +55,7 @@ const highlights = [
 
 const ProjectsComponent = () => {
     return (
-        <section className="w-full py-10 md:py-16">
+        <section className="w-full py-10 md:py-16 [zoom:50%]">
             <div className="mb-10 max-w-3xl text-center md:text-left">
                 <h1 className="text-4xl font-bold text-white md:text-6xl">
                     Projects
