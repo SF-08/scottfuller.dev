@@ -48,7 +48,7 @@ export default function Home() {
         <div>
             <div className="text-center md:text-left mb-4">
                 <h1 className="text-xl">
-                    Hi, I'm <span className="bg-linear-to-tl from-indigo-500 to fuchsia-500 text-transparent bg-clip-text font-bold">Scott Fuller</span>
+                    Hi, I'm <span className="bg-linear-to-tl from-blue-500 to-indigo-500 text-transparent bg-clip-text font-bold">Scott Fuller</span>
                     <span className="animate-wave inline-block">✋🏻</span>
                 </h1>
                 <h2 className="text-7x1">
