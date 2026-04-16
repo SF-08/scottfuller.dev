@@ -35,7 +35,7 @@ export default function Home() {
             {/* Profile Picture */}
             <div className="relative w-87.5 md:w-2/5">
             <Image
-                src="/self.png"
+                src="/me.png"
                 alt='Profile Picutre'
                 width={350}
                 height={350}
