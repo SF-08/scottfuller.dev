@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaArrowLeft } from "react-icons/fa6";
-import MotionHoc from "../../pages/motionhoc";
 
 
 const Logo = ({ className }: { className?: string }) => {
@@ -37,6 +36,4 @@ const NavBar = () => {
     );
 };
 
-const NavBarWithMotion = MotionHoc(NavBar);
-
-export default NavBarWithMotion;
+export default NavBar;
