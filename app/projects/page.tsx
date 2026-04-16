@@ -4,6 +4,17 @@ import Link from "next/link";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import MotionHoc from "../pages/motionhoc";
 
+type Project = {
+    name: string;
+    summary: string;
+    year: string;
+    role: string;
+    stack: string[];
+    status: string;
+    accent: string;
+    sourceUrl?: string;
+};
+
 const projects = [
     {
         name: "scottfuller.dev",
@@ -14,6 +25,7 @@ const projects = [
         stack: ["Next.js", "Tailwind", "Framer Motion"],
         status: "Live",
         accent: "from-sky-500/30 via-cyan-500/10 to-transparent",
+        sourceUrl: "https://github.com/SF-08/scottfuller.dev",
     },
     {
         name: "Concept Commision Work - WIP",
@@ -24,6 +36,7 @@ const projects = [
         stack: ["React", "TypeScript", "Tailwind", "NodeJS"],
         status: "Prototype",
         accent: "from-emerald-500/30 via-lime-500/10 to-transparent",
+        sourceUrl: "https://github.com/SF-08/CommisionWork",
     },
     {
         name: "Clockwork Courier",
@@ -34,22 +47,24 @@ const projects = [
         stack: ["Godot Engine", "GDScript"],
         status: "Live",
         accent: "from-yellow-500/30 via-orange-500/10 to-transparent",
+        sourceUrl: "https://github.com/SF-08/ClockworkCourier",
     },
     {
         name: "LateFix - WIP",
         summary:
             "A mobile app specialised to improve a person's sleep schedule and not be late for day-to-day events.",
         year: "2025",
-        role: "UX/UI Design + Frontend",
+        role: "Full Stack Development",
         stack: ["React", "Figma", "Responsive Design"],
         status: "Prototype",
         accent: "from-fuchsia-500/30 via-pink-500/10 to-transparent",
+        sourceUrl: "https://github.com/SF-08/LateFix",
     },
-];
+    ] satisfies Project[];
 
 const highlights = [
-    { label: "Projects shown", value: "03" },
-    { label: "Primary stack", value: "Next + Tailwind" },
+    { label: "Projects shown", value: "04" },
+    { label: "Primary stack", value: "React, Next + Tailwind" },
     { label: "Focus", value: "Speed + clarity" },
 ];
 
@@ -121,13 +136,22 @@ const ProjectsComponent = () => {
                                     View live demo
                                     <FaArrowUpRightFromSquare />
                                 </Link>
-                                <Link
-                                    href="/"
-                                    className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-                                >
-                                    Source code
-                                    <FaGithub />
-                                </Link>
+                                {project.sourceUrl ? (
+                                    <Link
+                                        href={project.sourceUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+                                    >
+                                        Source code
+                                        <FaGithub />
+                                    </Link>
+                                ) : (
+                                    <span className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm font-semibold text-white/45">
+                                        Source code private
+                                        <FaGithub />
+                                    </span>
+                                )}
                             </div>
                         </div>
                     </article>
