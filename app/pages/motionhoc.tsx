@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { JSX } from "react/jsx-runtime";
 import React from "react";

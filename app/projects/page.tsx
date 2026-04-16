@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import MotionHoc from "../pages/motionhoc";
