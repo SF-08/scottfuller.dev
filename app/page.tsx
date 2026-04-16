@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6"
-import Projects from './pages/projects';
-import { AnimatePresence } from 'framer-motion';
 
 const socials = [
     { icon: FaGithub, href: "https://github.com/SF-08", label: "GitHub" },
@@ -26,7 +24,8 @@ const bulletPoints = [
     {
         icon: "💼",
         linkText: "view my projects",
-        href: "/projects"
+        href: "/projects",
+        internal: true
     }
 ];
 
@@ -59,11 +58,14 @@ export default function Home() {
 
             {/* Bullet Points */}
             <ul className="space-y-1 text-2x1 text-center md:text-left">
-                {bulletPoints.map(({ icon, label, linkText, href, download }, index) => (
+                {bulletPoints.map(({ icon, label, linkText, href, download, internal }, index) => (
                     <li key={index}>
                         <span className="mr-2">{icon}</span>
                         {label}
-                        {href && (
+                        {href && internal && (
+                            <Link href={href} className="link link-primary">{linkText}</Link>
+                        )}
+                        {href && !internal && (
                             <a href={href} download={download} className="link link-primary">{linkText}</a>
                         )}
                     </li>
