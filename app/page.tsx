@@ -65,6 +65,9 @@ export default function Home() {
                         {href && internal && (
                             <Link href={href} className="link link-primary">{linkText}</Link>
                         )}
+                         {href && !internal && (
+                            <a href={href} className="link link-primary">{linkText}</a>
+                        )}
                     </li>
                 ))}
             </ul>
