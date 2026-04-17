@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
+import { FaArrowUpRightFromSquare, FaGithub, FaUpRightAndDownLeftFromCenter } from "react-icons/fa6";
 import MotionHoc from "../pages/motionhoc";
 
 type Project = {
@@ -13,6 +13,7 @@ type Project = {
     status: string;
     accent: string;
     sourceUrl?: string;
+    expandUrl?: string;
 };
 
 const projects = [
@@ -37,17 +38,7 @@ const projects = [
         status: "Prototype",
         accent: "from-emerald-500/30 via-lime-500/10 to-transparent",
         sourceUrl: "https://github.com/SF-08/CommisionWork",
-    },
-    {
-        name: "Clockwork Courier",
-        summary:
-            "A game created in Godot Engine for my college assignment.",
-        year: "2026",
-        role: "Game Design + Development",
-        stack: ["Godot Engine", "GDScript"],
-        status: "Live",
-        accent: "from-yellow-500/30 via-orange-500/10 to-transparent",
-        sourceUrl: "https://github.com/SF-08/ClockworkCourier",
+        expandUrl: ""
     },
     {
         name: "LateFix - WIP",
@@ -59,6 +50,7 @@ const projects = [
         status: "Prototype",
         accent: "from-fuchsia-500/30 via-pink-500/10 to-transparent",
         sourceUrl: "https://github.com/SF-08/LateFix",
+        expandUrl: "/projects/latefix",
     },
     ] satisfies Project[];
 
@@ -150,6 +142,23 @@ const ProjectsComponent = () => {
                                     <span className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm font-semibold text-white/45">
                                         Source code private
                                         <FaGithub />
+                                    </span>
+                                )}
+                                {project.expandUrl ? (
+                                    <Link
+                                    href={project.expandUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+                                    >
+                                        Expand
+                                        
+                                        <FaUpRightAndDownLeftFromCenter />
+                                    </Link>
+                                ) : (
+                                    <span className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm font-semibold text-white/45">
+                                        No additional details
+                                        <FaUpRightAndDownLeftFromCenter />
                                     </span>
                                 )}
                             </div>
