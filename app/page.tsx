@@ -19,7 +19,7 @@ const bulletPoints = [
         icon: "📄",
         linkText: "view my resume",
         href: "/ScottFullerResume.pdf",
-        download: "ScottFullerResume"
+        internal: true
     },
     {
         icon: "💼",
@@ -58,15 +58,12 @@ export default function Home() {
 
             {/* Bullet Points */}
             <ul className="space-y-1 text-2x1 text-center md:text-left">
-                {bulletPoints.map(({ icon, label, linkText, href, download, internal }, index) => (
+                {bulletPoints.map(({ icon, label, linkText, href, internal }, index) => (
                     <li key={index}>
                         <span className="mr-2">{icon}</span>
                         {label}
                         {href && internal && (
                             <Link href={href} className="link link-primary">{linkText}</Link>
-                        )}
-                        {href && !internal && (
-                            <a href={href} download={download} className="link link-primary">{linkText}</a>
                         )}
                     </li>
                 ))}

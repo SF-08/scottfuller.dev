@@ -16,7 +16,7 @@ type Project = {
     expandUrl?: string;
 };
 
-const projects = [
+export const projects = [
     {
         name: "scottfuller.dev",
         summary:
@@ -147,8 +147,6 @@ const ProjectsComponent = () => {
                                 {project.expandUrl ? (
                                     <Link
                                     href={project.expandUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
                                     >
                                         Expand
