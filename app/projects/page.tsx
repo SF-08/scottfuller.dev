@@ -38,7 +38,7 @@ export const projects = [
         status: "Prototype",
         accent: "from-emerald-500/30 via-lime-500/10 to-transparent",
         sourceUrl: "https://github.com/SF-08/CommisionWork",
-        expandUrl: ""
+        expandUrl: "/projects/commisionwork",
     },
     {
         name: "LateFix - WIP",
