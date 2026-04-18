@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6"
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa6"
 
 const socials = [
     { icon: FaGithub, href: "https://github.com/SF-08", label: "GitHub" },
     { icon: FaLinkedin, href: "https://linkedin.com/in/scott-fuller-10a08431b/", label: "LinkedIn" },
-    { icon: FaXTwitter, href: "https://twitter.com/sc0tt08", label: "Twitter" }
+    { icon: FaInstagram, href: "https://www.instagram.com/sc0tt____", label: "Instagram" }
 ]
 
 const bulletPoints = [
