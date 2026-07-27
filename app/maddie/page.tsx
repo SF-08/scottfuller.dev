@@ -77,23 +77,46 @@ export default function Page() {
 				))}
 			</div>
 
+			<div className="scroll-canvas">
+				<section className="memory memory-a">
+					<h2>More moments</h2>
+					<p>Add text and images anywhere as you scroll.</p>
+				</section>
+
+				<section className="memory memory-b">
+					<h2>Little reasons you’re loved</h2>
+					<p>Place photos, notes, and surprises in different spots.</p>
+				</section>
+
+				<section className="memory memory-c">
+					<h2>Keep going forever</h2>
+					<p>The page is open-ended so you can keep adding content.</p>
+				</section>
+
+				<div className="floating-card floating-card-a">💖 You’re the best part of every day</div>
+				<div className="floating-card floating-card-b">🌷 A soft pink spring theme, just for you</div>
+				<div className="floating-card floating-card-c">📸 Drop images here with custom positions</div>
+			</div>
+
 			<style jsx>{`
 				:global(body) {
 					margin: 0;
-					background: #08111f;
-					overflow: hidden;
+					min-height: 100vh;
+					background: #12081a;
+					overflow-x: hidden;
+					overflow-y: auto;
 					font-family: Arial, Helvetica, sans-serif;
 				}
 
 				.birthday-scene {
 					position: relative;
 					min-height: 100vh;
-					display: grid;
-					place-items: center;
+					padding-bottom: 40vh;
 					color: #fff;
 					background:
-						radial-gradient(circle at top, rgba(109, 70, 255, 0.35), transparent 35%),
-						linear-gradient(180deg, #0b1230 0%, #09101d 58%, #06101a 100%);
+						radial-gradient(circle at top, rgba(255, 141, 210, 0.28), transparent 34%),
+						radial-gradient(circle at 20% 20%, rgba(160, 120, 255, 0.22), transparent 22%),
+						linear-gradient(180deg, #1b0d2a 0%, #12081a 48%, #0b1020 100%);
 				}
 
 				.sky,
@@ -128,7 +151,59 @@ export default function Page() {
 					text-align: center;
 					padding: 48px 24px 120px;
 					backdrop-filter: blur(6px);
+					min-height: 100vh;
+					display: grid;
+					place-content: center;
+					margin: 0 auto;
 				}
+
+				.scroll-canvas {
+					position: relative;
+					min-height: 320vh;
+					padding: 10vh 6vw 20vh;
+				}
+
+				.memory,
+				.floating-card {
+					position: absolute;
+					max-width: min(420px, 78vw);
+					border-radius: 28px;
+					background: rgba(255, 255, 255, 0.1);
+					border: 1px solid rgba(255, 214, 234, 0.22);
+					box-shadow: 0 16px 50px rgba(0, 0, 0, 0.24);
+					backdrop-filter: blur(10px);
+				}
+
+				.memory {
+					padding: 22px 24px;
+				}
+
+				.memory h2,
+				.memory p {
+					margin: 0;
+				}
+
+				.memory h2 {
+					color: #ffd1e7;
+					margin-bottom: 8px;
+				}
+
+				.memory p,
+				.floating-card {
+					color: rgba(255, 245, 250, 0.94);
+				}
+
+				.memory-a { top: 18vh; left: 8vw; }
+				.memory-b { top: 92vh; right: 10vw; }
+				.memory-c { top: 182vh; left: 16vw; }
+
+				.floating-card {
+					padding: 18px 20px;
+				}
+
+				.floating-card-a { top: 44vh; right: 16vw; }
+				.floating-card-b { top: 136vh; left: 12vw; }
+				.floating-card-c { top: 236vh; right: 14vw; }
 
 				.eyebrow {
 					margin: 0 0 12px;
