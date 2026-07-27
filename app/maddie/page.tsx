@@ -16,7 +16,15 @@ const fireworks = Array.from({ length: 8 }, (_, i) => ({
 	size: 120 + (i % 3) * 30,
 }));
 
+const memoryImages = [
+	{ title: "More moments", src: "/maddie/IMG_5224.JPEG", alt: "Description of image 1" },
+	{ title: "Little reasons you're loved", src: "/maddie/IMG_5307.JPEG", alt: "Description of image 2" },
+	{ title: "Keep going forever", src: "/maddie/IMG_5199.JPEG", alt: "Description of image 3" },
+];
+
 export default function Page() {
+	const [images, setImages] = React.useState(memoryImages);
+
 	return (
 		<main className="birthday-scene">
 			<div className="sky glow" />
@@ -47,7 +55,7 @@ export default function Page() {
 				<h1>Happy Birthday my beautiful girl!</h1>
 				<p className="message">
 					Wishing you a day full of laughter, love, and beautiful moments.
-					May your year ahead bloom with happiness.
+					May your day be as blessed as you are.
 				</p>
 
 				<div className="cards">
