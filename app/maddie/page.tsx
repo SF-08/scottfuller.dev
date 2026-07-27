@@ -80,22 +80,21 @@ export default function Page() {
 			<div className="scroll-canvas">
 				<section className="memory memory-a">
 					<h2>More moments</h2>
-					<img src="IMG_5224.JPEG" alt="Description of image 1" />
+					<img src="/maddie/IMG_5224.JPEG" alt="Description of image 1" />
 				</section>
 
 				<section className="memory memory-b">
-					<h2>Little reasons you’re loved</h2>
-					<img src="IMG_5307.JPEG" alt="Description of image 2" />
+					<h2>Little reasons you're loved</h2>
+					<img src="/maddie/IMG_5307.JPEG" alt="Description of image 2" />
 				</section>
 
 				<section className="memory memory-c">
 					<h2>Keep going forever</h2>
-                    <img src="IMG_5199.JPEG" alt="Description of image 3" />
+                    <img src="/maddie/IMG_5199.JPEG" alt="Description of image 3" />
 				</section>
 
 				<div className="floating-card floating-card-a">💖 You’re the best part of every day</div>
 				<div className="floating-card floating-card-b">🌷 The quietness in my heart</div>
-				<div className="floating-card floating-card-c">📸 Drop images here with custom positions</div>
 			</div>
 
 			<style jsx>{`
